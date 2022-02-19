@@ -1,0 +1,14 @@
+# Created by https://www.toptal.com/developers/gitignore/api/nuxtjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=nuxtjs
+
+### Nuxtjs ###
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+#node modules
+node_modules/**
+
+# End of https://www.toptal.com/developers/gitignore/api/nuxtjs

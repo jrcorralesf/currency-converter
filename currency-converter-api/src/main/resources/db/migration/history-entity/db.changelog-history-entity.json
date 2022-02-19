@@ -1,0 +1,52 @@
+{ "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "create-history-table",
+        "author": "Julian Corrales",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "historial_divisa",
+              "columns": [
+                {"column": {
+                  "name": "id",
+                  "type": "bigint",
+                  "autoIncrement": true,
+                  "constraints": {"primaryKey": true,"nullable": false,"updatable": false}
+                }},
+                {"column": {
+                  "name": "moneda_origen",
+                  "type": "varchar(50)",
+                  "constraints": {"nullable": false}
+                }},
+                {"column": {
+                  "name": "moneda_objetivo",
+                  "type": "varchar(50)",
+                  "constraints": {"nullable": false}
+                }},
+                {"column": {
+                  "name": "monto",
+                  "type": "float8",
+                  "constraints": {"nullable": false}
+                }},
+                {"column": {
+                  "name": "valor_conversion",
+                  "type": "float8",
+                  "constraints": {"nullable": false}
+                }},
+                {"column": {
+                  "name": "fecha_conversion",
+                  "type": "timestamp",
+                  "constraints": {"nullable": false, "updatable": false}
+                }},
+                {"column": {
+                  "name": "deleted_at",
+                  "type": "timestamp"
+                }}
+              ]
+            }
+          }
+        ]
+      }
+    }
+]}

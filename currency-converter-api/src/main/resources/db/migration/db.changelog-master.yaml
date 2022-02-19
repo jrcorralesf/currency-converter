@@ -1,0 +1,3 @@
+databaseChangeLog:
+  - include:
+      file: db/migration/history-entity/db.changelog-history-entity.json
